@@ -1,6 +1,6 @@
 # A "Bobified" b2o4B
 
-Bob refers to my friend [happybob](https://www.luogu.com/user/332914)
+Bob refers to my friend [happybob](https://www.luogu.com/user/332914).
 
 Every number in this 2o4B is "Bobified":
 
