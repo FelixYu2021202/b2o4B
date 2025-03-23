@@ -208,7 +208,6 @@ namespace Renderer
                 std::cout << "Error: Cannot find pics." << std::endl;
                 exit(0);
             }
-            std::get<0>(std::tie(i));
         }
     }
 
@@ -325,10 +324,6 @@ int main()
     sf::RenderWindow window(sf::VideoMode({1000, 1100}), "b2o4B");
     window.setFramerateLimit(60);
 
-    // window.setVerticalSyncEnabled(true);
-    // sf::WindowHandle handle = window.getNativeHandle();
-    // SetWindowPos(handle, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE);
-
     if (!window.setActive(false))
     {
         return 0;
@@ -352,25 +347,21 @@ int main()
                 {
                 case sf::Keyboard::Scan::Up:
                 case sf::Keyboard::Scan::W:
-                    // gb.up();
                     gb.move({1, 0, 0}, {0, 1, 0});
                     break;
 
                 case sf::Keyboard::Scan::Down:
                 case sf::Keyboard::Scan::S:
-                    // gb.down();
                     gb.move({1, 0, 0}, {0, -1, gb.size - 1});
                     break;
 
                 case sf::Keyboard::Scan::Left:
                 case sf::Keyboard::Scan::A:
-                    // gb.left();
                     gb.move({0, 1, 0}, {1, 0, 0});
                     break;
 
                 case sf::Keyboard::Scan::Right:
                 case sf::Keyboard::Scan::D:
-                    // gb.right();
                     gb.move({0, -1, gb.size - 1}, {1, 0, 0});
                     break;
                 }
