@@ -12,4 +12,8 @@ Every number in this 2o4B is "Bobified":
 
 If you are using Windows, you can simply run `dist/b2o4B.exe`.
 
+---
+
 If you want to compile by yourself, be sure to include the [SFML](https://www.sfml-dev.org/) library.
+
+The folder `dist/pics` and the font `dist/CONSOLA.TTF` should also be put at where the built program is.
